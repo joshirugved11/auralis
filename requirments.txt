@@ -1,0 +1,10 @@
+numpy
+scipy
+soundfile
+torch
+torchaudio
+Pillow
+requests
+torchvision
+tqdm
+matplotlib
