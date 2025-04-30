@@ -22,8 +22,11 @@ git checkout -b your-feature-name
 
 ### 4. Commit and Push
 git add .
+
 git commit -m "Add your meaningful commit message"
+
 git push origin your-feature-name
+
 
 ### 5. Submit a Pull Request
 Open a Pull Request on GitHub from your forked repository. Please include:
@@ -31,7 +34,9 @@ Open a Pull Request on GitHub from your forked repository. Please include:
 - Screenshots or logs if applicable
 
 ## 🧪 Testing
+
 python -m unittest discover tests/
+
 If you add a new module or feature, add a corresponding test file in the `tests/` directory.
 
 
