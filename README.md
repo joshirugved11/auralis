@@ -2,9 +2,20 @@
 
 > Intelligent Python Library for Voice Cloning, Audio Synthesis, and Image Generation
 
-![PyPI - Version](https://img.shields.io/pypi/v/auralis)
-![License](https://img.shields.io/github/license/rugvedjoshi/auralis)
+# Auralis
+
+![PyPI](https://img.shields.io/pypi/v/auralis?label=PyPI&color=blue)
+![TestPyPI](https://img.shields.io/badge/TestPyPI-latest-orange?logo=python)
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![Build](https://img.shields.io/github/actions/workflow/status/rugvedjoshi/auralis/build.yml?label=Build&logo=github)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+![Downloads](https://img.shields.io/pypi/dm/auralis.svg)
+![License](https://img.shields.io/github/license/rugvedjoshi/auralis)
+![Contributors](https://img.shields.io/github/contributors/rugvedjoshi/auralis)
+![Last Commit](https://img.shields.io/github/last-commit/rugvedjoshi/auralis)
+![Issues](https://img.shields.io/github/issues/rugvedjoshi/auralis)
+![Pull Requests](https://img.shields.io/github/issues-pr/rugvedjoshi/auralis)
+![Stars](https://img.shields.io/github/stars/rugvedjoshi/auralis?style=social)
 
 ---
 
