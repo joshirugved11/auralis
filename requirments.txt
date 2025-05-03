@@ -3,10 +3,14 @@ scipy
 soundfile
 torch
 torchaudio
+pyttsx3
 Pillow
-requests
+opencv-python
 torchvision
+requests
 tqdm
 matplotlib
-build 
+python-dotenv
+click
+build
 twine
