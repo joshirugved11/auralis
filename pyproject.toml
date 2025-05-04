@@ -1,0 +1,44 @@
+[project]
+name = "auralis"
+version = "0.0.1"
+description = "Intelligent Python Library for Voice Cloning, Audio Synthesis, and Image Generation"
+readme = "README.md"
+authors = [
+  { name = "Rugved Joshi", email = "rugvedsamruddhi@gmail.com" }
+]
+license = { file = "LICENSE" }
+keywords = ["voice cloning", "audio synthesis", "tts", "gan", "image generation", "python library"]
+requires-python = ">=3.8"
+
+dependencies = [
+  "numpy>=1.23",
+  "soundfile>=0.12",
+  "scipy>=1.10",
+  "requests>=2.31",
+  "Pillow>=9.4",
+  "pyttsx3>=2.90",
+  "tqdm>=4.66",
+  "python-dotenv>=1.0",
+  "click>=8.1",
+  "torch>=2.0",         # For GAN/Autoencoder
+  "torchaudio>=2.0",    # For audio models
+  "opencv-python>=4.8", # For image processing
+]
+
+[project.urls]
+"Homepage" = "https://github.com/joshirugved11/auralis"
+"Repository" = "https://github.com/joshirugved11/auralis"
+"Bug Tracker" = "https://github.com/joshirugved11/auralis/issues"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "build", "twine"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["auralis", "auralis.audio", "auralis.image", "auralis.models", "auralis.utils", "auralis.cli"]
+
+[tool.setuptools.package-data]
+auralis = ["datasets/**/*", "*.md"]
+
+[tool.setuptools.dynamic]
+version = { attr = "auralis.__version__" }
