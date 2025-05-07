@@ -1,5 +1,5 @@
 [project]
-name = "auralis"
+name = "Auralis"
 version = "0.0.1"
 description = "Intelligent Python Library for Voice Cloning, Audio Synthesis, and Image Generation"
 readme = "README.md"
