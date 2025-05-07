@@ -41,10 +41,10 @@ requires = ["setuptools>=61.0", "wheel", "build", "twine"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["auralis", "auralis.audio", "auralis.image", "auralis.models", "auralis.utils"]
+packages = ["Auralis", "Auralis.audio", "Auralis.image", "Auralis.models", "Auralis.utils"]
 
 [tool.setuptools.package-data]
-auralis = ["*.md"]
+Auralis = ["*.md"]
 
 [tool.setuptools.dynamic]
-version = { attr = "auralis.__version__" }
+version = { attr = "Auralis.__version__" }
