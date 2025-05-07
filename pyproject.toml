@@ -22,11 +22,14 @@ dependencies = [
   "click>=8.1",
   "torch>=2.0",         # For GAN/Autoencoder
   "torchaudio>=2.0",    # For audio models
-  "opencv-python>=4.8", # For image processing
+  "opencv-python>=4.8", # For image processing]
+  "transformers>=4.30", # For TTS models
+  "diffusers>=0.20",   # For image generation models
+  "librosa>=0.10",     # For audio processing
+  "pydub>=0.25",       # For audio processing
+  "scikit-learn>=1.2", # For machine learning models
+  "matplotlib>=3.7"    # For visualization
 ]
-
-[project]
-LICENSE = "MIT"
 
 [project.urls]
 "Homepage" = "https://github.com/joshirugved11/auralis"
@@ -38,10 +41,10 @@ requires = ["setuptools>=61.0", "wheel", "build", "twine"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["auralis", "auralis.audio", "auralis.image", "auralis.models", "auralis.utils", "auralis.cli"]
+packages = ["auralis", "auralis.audio", "auralis.image", "auralis.models", "auralis.utils"]
 
 [tool.setuptools.package-data]
-auralis = ["datasets/**/*", "*.md"]
+auralis = ["*.md"]
 
 [tool.setuptools.dynamic]
 version = { attr = "auralis.__version__" }
