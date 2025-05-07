@@ -25,6 +25,9 @@ dependencies = [
   "opencv-python>=4.8", # For image processing
 ]
 
+[project]
+LICENSE = "MIT"
+
 [project.urls]
 "Homepage" = "https://github.com/joshirugved11/auralis"
 "Repository" = "https://github.com/joshirugved11/auralis"
