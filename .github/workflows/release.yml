@@ -23,9 +23,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install build twine toml
 
-    - name: Sync version to __version__.py
-      run: python sync_version.py
-
     - name: Build the package
       run: python -m build
 
