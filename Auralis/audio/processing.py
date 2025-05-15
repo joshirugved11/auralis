@@ -1,25 +1,28 @@
 import torch
 import torchaudio
 import os
-from datasets import load_dataset
+from datasets import load_dataset  # assuming this is your module
 
 def process_dataset(dataset_path: str, sample_rate: int = 16000):
     audio_files = load_dataset.load_audio_dataset(dataset_path, sample_rate)
 
     processed = []
     for filename, waveform, sr in audio_files:
-        waveform = normalize_audio(waveform)
         waveform = resample_audio(waveform, orig_sr=sr, target_sr=sample_rate)
-        waveform = save_audio(waveform, filename)
-        processed.append((filename, waveform))
-    
+        waveform = normalize_audio(waveform)
+        waveform_segments = split_audio(waveform, segment_length=sample_rate * 5)  # 5s
+
+        for i, segment in enumerate(waveform_segments):
+            name = f"{filename}_part{i}.wav"
+            saved = save_audio(segment, name)
+            processed.append((name, saved))
+
     return processed
 
 def normalize_audio(waveform: torch.Tensor) -> torch.Tensor:
     mean = waveform.mean()
     std = waveform.std()
-    normailsed_waveform = (waveform - mean) / std
-    return normailsed_waveform
+    return (waveform - mean) / std
 
 def resample_audio(waveform: torch.Tensor, orig_sr: int, target_sr: int) -> torch.Tensor:
     if orig_sr == target_sr:
@@ -29,14 +32,14 @@ def resample_audio(waveform: torch.Tensor, orig_sr: int, target_sr: int) -> torc
 
 def split_audio(waveform: torch.Tensor, segment_length: int) -> list:
     segments = []
-    for i in range(0, len(waveform), segment_length):
-        segment = waveform[i:i + segment_length]
-        if len(segment) == segment_length:
+    for i in range(0, len(waveform[0]), segment_length):
+        segment = waveform[:, i:i + segment_length]
+        if segment.shape[1] == segment_length:
             segments.append(segment)
     return segments
 
-def save_audio(waveform: torch.Tensor, filename: str, sample_rate) -> str:
-    output_path = os.path.join("processed_audio", filename)
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    torchaudio.save(output_path, waveform, sample_rate=16000)
-    return output_path
+def save_audio(waveform: torch.Tensor, filename: str) -> str:
+    path = os.path.join("processed_audio", filename)
+    os.makedirs("processed_audio", exist_ok=True)
+    torchaudio.save(path, waveform, 16000)  # Save at 16kHz
+    return path
