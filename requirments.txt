@@ -16,5 +16,12 @@ librosa
 pandas
 
 
-build  # Not for contributors as this build the library
-twine  # Not for contributors as this is used to upload the library to pypi
+openai-whisper
+ffmpeg
+TTS
+einops
+transformers
+tortoise-tts
+
+
+build  # Required for building the library if you are testing on your local pc
