@@ -5,9 +5,7 @@
 # Auralis
 
 ![PyPI](https://img.shields.io/pypi/v/auralis?label=PyPI&color=blue)
-![TestPyPI](https://img.shields.io/badge/TestPyPI-latest-orange?logo=python)
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![Build](https://img.shields.io/github/actions/workflow/status/joshirugved11/auralis/build.yml?label=Build&logo=github)
 ![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
 ![Downloads](https://img.shields.io/pypi/dm/auralis.svg)
 ![License](https://img.shields.io/github/license/joshirugved11/auralis)
