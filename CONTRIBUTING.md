@@ -30,6 +30,7 @@ git push origin your-feature-name
 
 ### 5. Submit a Pull Request
 Open a Pull Request on GitHub from your forked repository. Please include:
+- Target all pull requests on the **development** branch only
 - A clear explanation of the feature/bugfix
 - Screenshots or logs if applicable
 

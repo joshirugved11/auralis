@@ -2,5 +2,3 @@ env
 __init__.py
 .env
 
-Auralis/datasets/audios
-Auralis/datasets/images

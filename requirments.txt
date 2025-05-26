@@ -14,14 +14,13 @@ python-dotenv
 click
 librosa
 pandas
-
-
-openai-whisper
 ffmpeg
-TTS
-einops
-transformers
-tortoise-tts
+jiwer
+g2p_en
+pyworld
+sklearn
+wandb
+pytest
 
 
 build  # Required for building the library if you are testing on your local pc
