@@ -1,6 +1,6 @@
 [project]
 name = "Auralis"
-version = "0.0.2"
+version = "1.0.0"
 description = "Intelligent Python Library for Voice Cloning, Audio Synthesis, and Image Generation"
 readme = "README.md"
 authors = [
