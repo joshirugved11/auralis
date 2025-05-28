@@ -1,5 +1,5 @@
 [project]
-name = "Auralis"
+name = "auralislib"
 version = "1.0.0"
 description = "Intelligent Python Library for Voice Cloning, Audio Synthesis, and Image Generation"
 readme = "README.md"
@@ -41,10 +41,10 @@ requires = ["setuptools>=61.0", "wheel", "build", "twine"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["Auralis", "Auralis.audio", "Auralis.image", "Auralis.models", "Auralis.utils"]
+packages = ["auralislib", "auralislib.audio", "auralislib.image", "auralislib.models", "auralislib.utils", "auralislib.STT", "auralislib.TTS", "auralislib.VC"]
 
 [tool.setuptools.package-data]
 Auralis = ["*.md"]
 
 [tool.setuptools.dynamic]
-version = { attr = "Auralis.__version__" }
+version = { attr = "auralislib.__version__" }

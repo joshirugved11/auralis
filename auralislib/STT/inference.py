@@ -1,5 +1,5 @@
-from Auralis.models.ctc_model import CTCmodel
-from Auralis.audio.preprocessing import load_audio, extract_mfcc
+from auralislib.models.ctc_model import CTCmodel
+from auralislib.audio.preprocessing import load_audio, extract_mfcc
 import torch
 import torch.nn.functional as F
 
