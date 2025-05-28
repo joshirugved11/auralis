@@ -1,4 +1,4 @@
-from Auralis.models.tacotron_stub import TacotronStub
+from auralislib.models.tacotron_stub import TacotronStub
 import torch
 
 def text_to_tensor(text):
