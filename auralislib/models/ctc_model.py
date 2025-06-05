@@ -1,6 +1,6 @@
 import torch.nn as nn
 
-class CTCmodel(nn.module):
+class CTCmodel(nn.Module):
     def __init__(self, input_dim, output_dim, hidden_dim=256):
         super(CTCmodel, self).__init__()
         self.hidden_dim = hidden_dim
