@@ -1,13 +1,13 @@
-# 🎙️ Auralis
+# 🎙️ auralislib
 
 > Intelligent Python Library for Voice Cloning, Audio Synthesis, and Image Generation
 
-# Auralis
+# auralislib
 
-![PyPI](https://img.shields.io/pypi/v/auralis?label=PyPI&color=blue)
+![PyPI](https://img.shields.io/pypi/v/auralislib))
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
-![Downloads](https://img.shields.io/pypi/dm/auralis.svg)
+[![Downloads](https://img.shields.io/pypi/dm/auralislib.svg?label=Downloads&color=green)]
 ![License](https://img.shields.io/github/license/joshirugved11/auralis)
 ![Contributors](https://img.shields.io/github/contributors/joshirugved11/auralis)
 ![Last Commit](https://img.shields.io/github/last-commit/joshirugved11/auralis)
@@ -17,9 +17,9 @@
 
 ---
 
-## 🚀 What is Auralis?
+## 🚀 What is auralislib?
 
-**Auralis** is a Python library designed to make working with voice, audio, and image data creative and intelligent. It enables:
+**auralislib** is a Python library designed to make working with voice, audio, and image data creative and intelligent. It enables:
 - Voice cloning & synthesis  
 - Text-to-speech (TTS)  
 - Speech-to-text (STT)  
@@ -38,19 +38,19 @@
 
 ## 📦 Installation
 
-<pre lang="markdown"> pip install Auralis </pre>
+<pre lang="markdown"> pip install auralislib </pre>
 ---
 
 ## Usage
 1. Text-to-speech
 <pre lang="markdown"> 
-  from Auralis.text_to_speech.synth import synthesize
+  from auralislib.TTS.synth import synthesize
   synthesize("Hello world!", "output.wav")
 </pre>
 
 2. Speech-to-text
 <pre lang="markdown"> 
-  from Auralis.speech_to_text.inference import transcribe
+  from auralislib.STT.inference import transcribe
   text = transcribe("samples/audio.wav")
   print(text)
 </pre>
